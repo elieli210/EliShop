@@ -1,0 +1,200 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* direction: rtl; */
+  text-align: right;
+  font-family: "B Nazanin";
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif; */
+}
+* {
+  font-family: "B Nazanin";
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.social-btns .btn,
+.social-btns .btn:before,
+.social-btns .btn .fa {
+  transition: all 0.35s;
+  transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
+}
+.social-btns .btn:before {
+  top: 90%;
+  left: -110%;
+}
+.social-btns .btn .fa {
+  -webkit-transform: scale(0.8);
+  transform: scale(0.8);
+}
+.social-btns .btn.facebook:before {
+  background-color: #3b5998;
+}
+.social-btns .btn.facebook .fa {
+  color: #3b5998;
+}
+.social-btns .btn.twitter:before {
+  background-color: #33ccff;
+}
+.social-btns .btn.twitter .fa {
+  color: #33ccff;
+}
+.social-btns .btn.admin:before {
+  background-color: #fe0883;
+}
+.social-btns .btn.admin .fa {
+  color: #3b5998;
+}
+
+.social-btns .btn.call:before {
+  background-color: #fe0883;
+}
+.social-btns .btn.call .fa {
+  color: #fe0883;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+}
+.social-btns .btn.instagram:before {
+  background-color: #fe0883;
+}
+.social-btns .btn.instagram .fa {
+  color: #fe0883;
+}
+.social-btns .btn.basket:before {
+  background-color: #fe0883;
+}
+.social-btns .btn.basket .fa {
+  color: #fe0883;
+}
+.social-btns .btn.admin .fa {
+  color: #fe0883;
+}
+.social-btns .btn:focus:before,
+.social-btns .btn:hover:before {
+  top: -10%;
+  left: -10%;
+}
+.social-btns .btn:focus .fa,
+.social-btns .btn:hover .fa {
+  color: #fff;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+.social-btns {
+  height: 40px;
+  margin: auto;
+  font-size: 17px;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 20px;
+  right: 0;
+}
+.social-btns .btn {
+  display: inline-block;
+  background-color: #fff;
+  width: 90px;
+  height: 90px;
+  line-height: 90px;
+  margin: 0 10px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 28%;
+  box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.1);
+  opacity: 0.99;
+}
+.social-btns .btn:before {
+  content: "";
+  width: 120%;
+  height: 120%;
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.social-btns .btn .fa {
+  font-size: 38px;
+  vertical-align: middle;
+  font-weight: bold;
+}
+a::hover {
+  color: black;
+}
+
+@-webkit-keyframes sheen {
+  0% {
+    -webkit-transform: skewY(-45deg) translateX(0);
+    transform: skewY(-45deg) translateX(0);
+  }
+  100% {
+    -webkit-transform: skewY(-45deg) translateX(12.5em);
+    transform: skewY(-45deg) translateX(12.5em);
+  }
+}
+@keyframes sheen {
+  0% {
+    -webkit-transform: skewY(-45deg) translateX(0);
+    transform: skewY(-45deg) translateX(0);
+  }
+  100% {
+    -webkit-transform: skewY(-45deg) translateX(12.5em);
+    transform: skewY(-45deg) translateX(12.5em);
+  }
+}
+
+.enter {
+  padding: 4px 20px;
+  text-align: center;
+  text-decoration: none;
+  color: #fe0883;
+  border: 2px solid #fe0883;
+  font-size: 17px;
+  display: inline-block;
+  border-radius: 0.3em;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+.enter:before {
+  content: "";
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 100%;
+  width: 3em;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -4.5em;
+  -webkit-transform: skewX(-45deg) translateX(0);
+  transform: skewX(-45deg) translateX(0);
+  -webkit-transition: none;
+  transition: none;
+}
+.enter:hover {
+  background-color: #fe0883;
+  color: #fff;
+  border-bottom: 4px solid #1977b5;
+}
+.enter:hover:before {
+  -webkit-transform: skewX(-45deg) translateX(13.5em);
+  transform: skewX(-45deg) translateX(13.5em);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+@font-face {
+  font-family: "B Nazanin";
+  src: local("font"),
+    url("../src/assets/font/B\ Nazanin.ttf") format("truetype");
+  font-weight: bold;
+}

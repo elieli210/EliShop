@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "B Nazanin";
+  src: local("font"), url("../font/B\ Nazanin.ttf") format("truetype");
+  font-weight: bold;
+}
+body {
+  /*direction: rtl;*/
+  text-align: right;
+  font-family: "B Nazanin";
+}
+* {
+  font-family: "B Nazanin";
+}
